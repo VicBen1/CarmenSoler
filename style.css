@@ -1,0 +1,104 @@
+@charset "utf-8";
+body {
+	margin: 0px;
+	font-family: Calibri;
+	background: #FFFFFF;
+}
+
+body header {
+    background: #FFFFFF;
+    width: 100%;
+	top: 0;
+	position: fixed;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+    float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+	font-size: 103%;
+}
+
+.bold {
+	font-weight: 500;
+}
+
+.bolder {
+	font-weight: bolder;
+}
+
+.menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu ul li {
+	display: inline-block;
+}
+
+.menu ul li a {
+	color: black;
+	font-weight: 500;
+	display: block;
+	padding: 0.5rem 1rem;
+	transition: all 0.4s linear;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.menu ul li a:hover {
+	background: #9E9E9E;
+}
+
+.footer .container2 {
+	background: #727272;
+	padding: 4rem 0;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container2 .firma {
+	margin-left: 5%;
+}
+
+.container2 .redes {
+	margin-right: 5%;
+}
+
+.video_background {
+ position: absolute;
+ bottom: 0px;
+ right: 0px;
+ min-width: 50%;
+ min-height: 50%;
+ max-width: auto;
+ max-height: auto;
+ z-index: -1000;
+ overflow: hidden;
+ }
+
+.video p {
+	color: azure;
+}
+
+.sitios {
+	background-color: aliceblue;
+}
+
+.sitioscarrusel {
+	display: block;
+	box-sizing: content-box;
+	text-align: center;
+	justify-content: space-between;
+	
+}
