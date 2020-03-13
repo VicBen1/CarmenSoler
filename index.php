@@ -4,9 +4,15 @@
 <meta charset="utf-8">
 <title>Carmen Soler</title>
 <link href="style.css" rel="stylesheet" type="text/css">
+<!-- Slider -->
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="slick/slick.css">
 </head>
 
 <body>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="slick.min.js"></script>
+    <script src="slick.js"></script>
 	<header>
 		<div class="container">
 			<div class="logo">
@@ -32,17 +38,34 @@
  		<video/>
 		<p>Hola</p>
 	</div>
+        <!-- SLIDER -->
 	<div class="sitios">
-		<div class="sitioscontainer">
-			<p>Sitios Históricos</p>
-			<div class="sitioscarrusel">
+                        <p>Sitios Históricos</p>
+			<!-- <div class="sitioscarrusel">
 				<img src="img/foto1.jfif">
 				<img src="img/foto2.png">
-				<img src="img/foto3.jfif">
-			</div>
-		</div>
-	</div>
-	<div class="quienfue">
+				<img src="img/foto3.jfif"> 
+                               nosequeporongaseaesto perovoyaponerelsliderac�-->
+        <section class="regular slider">
+            <div><a href="www.google.com"><img src="imgs/1.jpg" alt=""></a></div>
+            <div><a href=""><img src="imgs/2.jpg" alt=""></a></div>
+            <div><a href=""><img src="imgs/3.jpg" alt=""></a></div>
+            <div><a href=""><img src="imgs/4.jpg" alt=""></a></div>
+            <div><a href=""><img src="imgs/5.jpg" alt=""></a></div>
+
+        </section>
+        <script>
+        $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1
+      });
+        </script>
+       </div>
+        <!-- FIN SLIDER -->
+        
+        <div class="quienfue">
 		<p>¿Quién fue?</p>
 	</div>
 	<div class="legado">
