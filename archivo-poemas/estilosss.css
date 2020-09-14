@@ -1,0 +1,565 @@
+body{
+    background: #fff;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*TODO-------------------------------------*/
+.contenedor{
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(100, auto);
+}
+
+/*Header-------------------------------------*/
+.contenedor .cabecera{
+    background: #fff;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row: span 6;
+    line-height: 1;
+}
+
+.uno{
+    color: #000000;
+}
+
+.contenedor .cabecera p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #A61317;
+    font-weight: 500;
+}
+
+.contenedor .cabecera p strong {
+    font-weight: 900;
+}
+
+/*Menu responsive-----------------------------*/
+.contenedor .menures{
+    display: none;
+}
+
+/*Menu escritorio-----------------------------*/
+.contenedor .menu{
+    grid-column: 1/-1;
+    grid-row:span 6;
+    display: inline-flex;
+    align-items:center;
+    justify-content:space-between;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.contenedor .menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.contenedor .menu a:hover{
+    color: #9C9B9B;
+}
+
+.contenedor .menu #current{
+    color: rgba(166, 19, 24, 1.0);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+
+
+
+/*PÁRRAFO-------------------------------------*/
+
+.contenedor .parrafo{
+    grid-column:1/-1;
+    grid-row:span 25;
+    background-image: url(imgs/archivo-de-poemas-990x300.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.contenedor .slid{
+    grid-column: 1/-1;
+    grid-row: span 20;
+    background: #fff;
+    overflow: hidden;
+    position: absolute;
+    left: 2000px;
+}
+
+.contenedor .nros{
+    grid-column: 1/-1;
+    grid-row: span 2;
+    background: #fff;
+    
+}
+
+.contenedor .pag{
+    grid-column: 1/-1;
+    grid-row: span 22;
+    background: #fff;
+    display: none;
+}
+
+.botones2{
+    width: 300px;
+    height: 75px;
+    margin: 5x;
+    padding: 10px;
+    background: #000000;
+}
+.inic{
+    /*display: inline-flex;*/
+    /*background: #003333;*/
+    height: 50px;
+    width: 50px;
+    
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 1px solid #000000;         
+    
+}
+.titulos{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: -45px;
+    
+}
+.titulos > li > p1{
+    color: white;
+}
+.titulos > li > p2{
+    color: #999999;
+    font-size: 12px;
+}
+.list2{
+    display: flex;
+    flex-direction:column;
+    list-style: none;
+}
+
+.imgsize{
+    width: 100px;
+    height: 250px;
+}
+
+.contenedor .pag{
+    display: flex;
+    grid-gap:8px;
+    overflow: hidden;
+    overflow-x: scroll;
+    
+}
+.nros > li{
+    list-style: none;
+    display:flex;
+    justify-content:center;
+    grid-gap:5px;
+    margin-left: 850px;
+}
+.nros > li > button{
+    background: transparent;
+    border-color: transparent;
+    font-size: 18px;
+    font-family: sans-serif black;
+    color: #999999;
+    
+    
+}
+.nros > li > button:focus{
+    color: #ff3333;
+    /*text-decoration: underline;*/
+}
+.nros > li > button .isize{
+   font-size: 40px;
+}
+.contador{
+    margin-left: 150px;
+    margin-bottom: -30px;
+    font-family: Arial black;
+    color: #ff3333;
+}
+.contenedor .pag{
+    display: flex;
+    grid-gap:0px;
+}
+
+.line1,.line2,.line3,.line4,.line5,.line6,.line7,.line8,.line9,.line10,.line11,.line12,.line13,.line14,.line15,.line16,.line17,.line18,.line19,.line20,.line202,.line21{
+      display: flex;
+      list-style: none;
+      grid-gap:20px;
+      flex-direction:column; 
+      
+}
+.line1{
+    margin-left: 100px;
+}
+.line4{
+    margin-left: 290px;
+}
+.line7{
+    margin-left: 290px;
+}
+.line10{
+    margin-left: 290px;
+}
+.line13{
+    margin-left: 290px;
+}
+.line16{
+    margin-left: 290px;
+}
+.line19{
+    margin-left: 290px;
+}
+.line202{
+    margin-right: 150px;
+}
+
+
+.line1 > li > p1{
+    font-size: 12px;
+}
+.line1 > li > h2{
+    font-size: 12px;
+}
+.line1 > li > p2{
+    font-size:9px; 
+}
+.line2 > li > p1{
+    font-size: 12px;
+}
+.line2 > li > h2{
+    font-size: 12px;
+}
+.line2 > li > p2{
+    font-size:9px; 
+}
+.line3 > li > p1{
+    font-size: 12px;
+}
+.line3 > li > h2{
+    font-size: 12px;
+}
+.line3 > li > p2{
+    font-size:9px; 
+}
+.line4 > li > p1{
+    font-size: 12px;
+}
+.line4 > li > h2{
+    font-size: 12px;
+}
+.line4 > li > p2{
+    font-size:9px; 
+}
+.line5 > li > p1{
+    font-size: 12px;
+}
+.line5 > li > h2{
+    font-size: 12px;
+}
+.line5 > li > p2{
+    font-size:9px; 
+}
+.line6 > li > p1{
+    font-size: 12px;
+}
+.line6 > li > h2{
+    font-size: 12px;
+}
+.line6 > li > p2{
+    font-size:9px; 
+}
+.line7 > li > p1{
+    font-size: 12px;
+}
+.line7 > li > h2{
+    font-size: 12px;
+}
+.line7 > li > p2{
+    font-size:9px; 
+}
+.line8 > li > p1{
+    font-size: 12px;
+}
+.line8 > li > h2{
+    font-size: 12px;
+}
+.line8 > li > p2{
+    font-size:9px; 
+}
+.line9 > li > p1{
+    font-size: 12px;
+}
+.line9 > li > h2{
+    font-size: 12px;
+}
+.line9 > li > p2{
+    font-size:9px; 
+}
+
+.line10 > li > p1{
+    font-size: 12px;
+}
+.line10 > li > h2{
+    font-size: 12px;
+}
+.line10 > li > p2{
+    font-size:9px; 
+}
+.line11 > li > p1{
+    font-size: 12px;
+}
+.line11 > li > h2{
+    font-size: 12px;
+}
+.line11 > li > p2{
+    font-size:9px; 
+}
+.line12 > li > p1{
+    font-size: 12px;
+}
+.line12 > li > h2{
+    font-size: 12px;
+}
+.line12 > li > p2{
+    font-size:9px; 
+}
+.line13 > li > p1{
+    font-size: 12px;
+}
+.line13 > li > h2{
+    font-size: 12px;
+}
+.line13 > li > p2{
+    font-size:9px; 
+}
+.line14 > li > p1{
+    font-size: 12px;
+}
+.line14 > li > h2{
+    font-size: 12px;
+}
+.line14 > li > p2{
+    font-size:9px; 
+}
+.line15 > li > p1{
+    font-size: 12px;
+}
+.line15 > li > h2{
+    font-size: 12px;
+}
+.line15 > li > p2{
+    font-size:9px; 
+}
+.line16 > li > p1{
+    font-size: 12px;
+}
+.line16 > li > h2{
+    font-size: 12px;
+}
+.line16 > li > p2{
+    font-size:9px; 
+}
+.line17 > li > p1{
+    font-size: 12px;
+}
+.line17 > li > h2{
+    font-size: 12px;
+}
+.line17 > li > p2{
+    font-size:9px; 
+}
+.line18 > li > p1{
+    font-size: 12px;
+}
+.line18 > li > h2{
+    font-size: 12px;
+}
+.line18 > li > p2{
+    font-size:9px; 
+}
+.line19 > li > p1{
+    font-size: 12px;
+}
+.line19 > li > h2{
+    font-size: 12px;
+}
+.line19 > li > p2{
+    font-size:9px; 
+}
+.line20 > li > p1{
+    font-size: 12px;
+}
+.line20 > li > h2{
+    font-size: 12px;
+}
+.line20 > li > p2{
+    font-size:9px; 
+}
+.line21 > li > p1{
+    font-size: 12px;
+}
+.line21 > li > h2{
+    font-size: 12px;
+}
+.line21 > li > p2{
+    font-size:9px; 
+}
+
+.contenedor .parrafo{
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:center;
+}
+.contenedor .menures{
+    display: none;
+}
+
+.owl-next > span,.owl-prev > span{font-size:25px;padding:20px;}
+.owl-carousel .owl-nav{
+    display: flex;
+    justify-content:space-around;
+}
+
+/*Footer-----------------------------*/
+.contenedor .footer{
+    grid-column: 1/-1;
+    grid-row: span 6;
+    display: grid;
+    align-items:center;
+    justify-content:space-between;
+    background: #A61317;
+    grid-gap:20px;
+    flex-direction:column;
+}
+
+.cajita{
+    grid-column: 1/4;
+}
+
+.peque {
+    grid-column: 16/19;
+}
+
+.peque img {
+    height: 30px;
+    width: 30px;
+}
+
+.footer .peque a {
+    color: #fff;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1130px){
+    .contenedor .cabecera{
+        grid-column:1/8;
+    }
+    .contenedor .menu{
+        grid-column:8/-1;
+    }
+}
+
+@media screen and (max-width:980px){
+    .contenedor .cabecera{
+        grid-column:1/6;
+    }
+    .contenedor .menu{
+        grid-column:6/-1;
+    }
+}
+
+@media screen and (max-width:980px){
+    .contenedor .cabecera{
+        grid-column:1/6;
+    }
+    .contenedor .menu{
+        grid-column:6/-1;
+    }
+}
+
+@media screen and (max-width:900px){
+    .contenedor .menu2{
+        display: flex;
+        position: absolute;
+        flex-direction:column;
+        align-items:flex-start;
+        background: #fff;
+        /*border: 1px solid black;*/
+        grid-gap:7px;
+        
+        width: 280px;
+        
+        right: -300px;
+        /*right: 12px;*/
+        top:110px;
+        
+    }
+    .contenedor .menu2 > a{
+        margin: 1px;
+        padding: 5px;
+        margin-left: 5px;
+        
+    }
+    .contenedor .menu2 > a:hover{
+        cursor:pointer;
+        background: rgba(0,0,0,0.1);
+        width: 100%;
+        height: 100%;
+        
+    }
+ 
+    .contenedor .menures{
+        display: grid;
+        background: #fff;
+        grid-column:15/21;
+        grid-row:span 6;
+       
+        display: flex;
+        justify-content:right;
+    }
+    .contenedor .menures > label:hover{
+        cursor:pointer;
+        background: rgba(0,0,0,0.1);
+        height: 40px;
+        padding: 4px;
+    }
+    .contenedor .menures > input{
+        display: none;
+    }
+    .contenedor .menu{
+        display:none;
+    }
+    .contenedor .menu2{
+    
+    margin-top: -20px;
+    
+}
+.contenedor .menu2 a{
+    text-decoration: none;
+    font-family: Calibri;
+    color: #000000;
+    font-size: 19px;
+}
+    #menu-res:checked ~ .menu2{
+        right: 12px;
+    }
+    
+}
