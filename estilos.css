@@ -1,0 +1,553 @@
+body{
+    background: #fff;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*TODO-------------------------------------*/
+.contenedor{
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(100, auto);
+}
+
+/*Header-------------------------------------*//*
+.contenedor .cabecera{
+    background: #fff;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row: span 5;
+    line-height: 1;
+}
+
+.uno{
+    color: #000000;
+}
+
+.contenedor .cabecera p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #A61317;
+    font-weight: 500;
+}
+
+.contenedor .cabecera p strong {
+    font-weight: 900;
+}
+*/
+
+/*Menu responsive-----------------------------*/
+.contenedor .menures{
+    display: none;
+}
+
+/*Menu escritorio-----------------------------*/
+.contenedor .menu{
+    grid-column: 1/-1;
+    /*grid-row:span 5;*/
+    display: inline-flex;
+    align-items:center;
+    justify-content:space-between;
+    width: 100%;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    height: 85px;
+}
+
+.contenedor .menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 15px;
+}
+
+.contenedor .menu a:hover{
+    color: #9C9B9B;
+}
+
+.contenedor .menu #current{
+    color: rgba(166, 19, 24, 1.0);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 15px;
+}
+
+/*Portada--------------------------------------*/
+.contenedor .portada{
+    grid-column: 1/-1;
+    grid-row: span 25;
+    margin: 0;
+    padding: 0;
+    margin-top:-25px;
+    width: 100%;
+    background-image: url(imgs/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor .portada .texto_portada {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor .portada h1 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 52px;
+    font-size: 52px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.contenedor .portada .boton_portada {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+  background-color: #A61317;
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0;
+  padding: 15px 32px;
+  font-weight: bold;
+}
+.contenedor .portada .boton_portada:hover {
+    background-color: #9C9B9B;
+}
+
+/*Introducción---------------------------------*/
+.contenedor .intro{
+    grid-column: 1/-1;
+    grid-row: span 40;
+    margin: 0;
+    padding: 0;
+    margin-top:-25px;
+    width: 100%;
+    text-align: center;
+    
+}
+.contenedor .intro .alineador{
+    display: flex;
+    justify-content:center;
+}
+
+.contenedor .intro .alineador .textoj{
+    width: 800px;
+    height: 70px;
+    text-align: justify;
+    text-justify:distribute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 34px;
+}
+.contenedor .intro .boton_vida {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #A61317;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 15px 64px;
+    font-weight: bold;
+    margin-left: 288px;
+}
+.contenedor .intro .boton_vida:hover {
+    background-color: #9C9B9B;
+}
+
+/*Poemas--------------------------------------*/
+.contenedor .poemas{
+    grid-column: 1/-1;
+    grid-row: span 28;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-image: url(imgs/poema-background1920x600.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor .poemas .texto_poemas {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor .poemas h1 {
+    font-size: 32px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.contenedor .poemas .boton_poemas {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+  background-color: #A61317;
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0;
+  padding: 15px 32px;
+  font-weight: bold;
+}
+.contenedor .poemas .boton_poemas:hover {
+    background-color: #9C9B9B;
+}
+
+/*Sitios--------------------------------------*/
+.contenedor .sitios{
+    grid-column: 4/-1;
+    grid-row: span 4;
+    font-weight: bold;
+    color: #A61317;
+}
+.contenedor .sitios p{
+    margin-top: 125px;
+    margin-bottom: 0;
+    font-size: 32px;
+}
+
+.contenedor .slider{
+    grid-column: 1/-1;
+    grid-row: span 22;
+    background: #fff;
+    margin-bottom: 125px;
+}
+
+
+/*Quien fue------------------------------*/
+.contenedor .quienfue{
+    grid-column: 1/-1;
+    grid-row: span 18;
+    align-self: center;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: #A61317;
+    display: grid;
+    padding: 7rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.contenedor .quienfue h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor .quienfue .texto {
+    grid-row: 1/-1;
+    margin: 100px;
+    margin-top: 7rem;
+    margin-bottom: 0;
+    margin-left: 3rem;
+    margin-right: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor .quienfue .imagen {
+    grid-row: 1/-1;
+    text-align: center;
+    margin: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.quienfue h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 34px;
+}
+
+.quienfue a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.quienfue a:hover {
+    color: #9C9B9B;
+}
+
+.quienfue p2{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 34px;
+}
+
+.quienfue p1 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contenedor .quienfue .imagen img {
+    width: 100%;
+}
+
+.contenedor .quienfue .boton_galeria {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    display: block;
+  color: #A61317;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0;
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.contenedor .quienfue .boton_galeria:hover {
+    background-color: #9C9B9B;
+}
+
+
+/*Investigadores-----------------------------*/
+.contenedor .inves{
+    grid-column: 4/-1;
+    grid-row: span 6;
+    color: #A61317;
+    margin-top: 100px;
+}
+
+.inves h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.contenedor .slider2{
+    grid-column: 1/-1;
+    grid-row: span 18;
+    background: #fff;
+    margin-bottom: 125px;
+}
+.imgsize2{
+    /*height: 400px;*/
+    /*width: 100px;*/
+}
+
+.its{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    
+}
+
+
+
+
+
+/*Footer-----------------------------*/
+.contenedor .footer{
+    grid-column: 1/-1;
+    display: table;
+    /*grid-row: span 6;
+    align-items:center;*/
+    background: #A61317;
+    /*grid-gap:20px;
+    flex-direction:column;*/
+    height: 110px;
+}
+
+.cajita{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*.peque {
+    grid-column: 16/19;
+}
+
+.peque img {
+    height: 30px;
+    width: 30px;
+}
+
+.footer .peque a {
+    color: #fff;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}*/
+
+
+@media screen and (max-width:1130px){
+    .contenedor .cabecera{
+        grid-column:2/8;
+    }
+    .contenedor .menu{
+        grid-column:8/-2;
+    }
+}
+
+@media screen and (max-width:980px){
+    .contenedor .cabecera{
+        grid-column:2/6;
+    }
+    .contenedor .menu{
+        grid-column:6/-2;
+    }
+}
+
+@media screen and (max-width:900px){
+    .contenedor .cabecera{
+        grid-column:2/10;
+    }
+
+    .contenedor .cabecera p{
+        font-size: 14px;
+    }
+
+    .contenedor .menu2{
+        display: flex;
+        position: absolute;
+        flex-direction:column;
+        align-items:flex-start;
+        background: #fff;
+        grid-gap:7px;
+        width: 280px;
+        right: -300px;
+        top:110px;
+    }
+
+    .contenedor .menu2 > a{
+        margin: 1px;
+        padding: 5px;
+        margin-left: 5px;
+        color: #A61317;
+    }
+
+    .contenedor .menu2 > a:hover{
+        cursor:pointer;
+        background: rgba(0,0,0,0.1);
+        width: 100%;
+        height: 100%;
+    }
+ 
+    .contenedor .menures{
+        display: grid;
+        background: #fff;
+        grid-column:15/21;
+        grid-row:span 6;
+        margin-top: 30px;
+        margin-right: 50px;
+        display: flex;
+        justify-content:right;
+    }
+
+    .contenedor .menures > label:hover{
+        cursor:pointer;
+        background: rgba(0,0,0,0.1);
+        height: 40px;
+        /*padding: 4px;*/
+    }
+
+    .contenedor .menures > input{
+        display: none;
+    }
+
+    .contenedor .menu{
+        display:none;
+    }
+
+    .contenedor .menu2{
+    margin-top: -20px;
+    }
+
+    .contenedor .menu2 a{
+    text-decoration: none;
+    color: #A61317;
+    font-size: 19px;
+    }
+
+    #menu-res:checked ~ .menu2{
+        right: 12px;
+    }
+
+    .contenedor .sitios p{
+        margin-top: 5px;
+    }
+
+    .contenedor .quienfue {
+        grid-column:1/-1;
+        text-align: center;
+    }
+
+    .contenedor .quienfue2 {
+        grid-column:1/-1;
+        text-align: center;
+    }
+
+    .contenedor .legado {
+        grid-column:1/-1;
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .contenedor .legado2 {
+        grid-column:1/-1;
+        text-align: center;
+    }
+
+    .legado2 h2 {
+        font-size: 32px;
+        font-weight: bolder;
+        margin-left: 0;
+    }
+
+    .legado2 p1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 0;
+    }
+
+    .legado2 p2 {
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    .legado2 a {
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 0;
+    }
+
+    .contenedor .inves{
+        text-align: center;
+        grid-column:1/-1;
+    }
+
+    .contenedor .inves2{
+        grid-column:1/-1;
+    }
+
+    .contenedor .inves3{
+        grid-column:1/-1;
+    }
+}

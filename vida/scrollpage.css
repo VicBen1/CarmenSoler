@@ -1,0 +1,579 @@
+body{
+    background: #fff;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*TODO-------------------------------------*/
+.contenedor{
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(89, auto);
+}
+
+/*Header-------------------------------------*/
+.contenedor .cabecera{
+    background: #fff;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row: span 6;
+    line-height: 1;
+}
+
+.uno{
+    color: #000000;
+}
+
+.contenedor .cabecera p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #A61317;
+    font-weight: 500;
+}
+
+.contenedor .cabecera p strong {
+    font-weight: 900;
+}
+
+/*Menu responsive-----------------------------*/
+.contenedor .menures{
+    display: none;
+}
+
+/*Menu escritorio-----------------------------*/
+.contenedor .menu{
+    grid-column: 1/-1;
+    grid-row:span 5;
+    display: inline-flex;
+    align-items:center;
+    justify-content:space-between;
+    width: 100%;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.contenedor .menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.contenedor .menu a:hover{
+    color: #9C9B9B;
+}
+
+.contenedor .menu #current{
+    color: rgba(166, 19, 24, 1.0);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+
+/*PORTADA*/
+.contenedor .portada{
+    /*Imagen*/
+    background-image: url(portadas/1920x515.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    grid-column:1/-1;
+    grid-row: span 25;
+    margin: 0;
+    margin-top:-25px;
+    padding: 0;
+}
+.contenedor .portada .texto_portada {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor .portada h1 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 52px;
+    font-size: 52px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.contenedor .portada p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 48px;
+    font-size: 28px;
+    font-weight: lighter;
+    color: #fff;
+}
+
+/*PARRAFO---------------------------------------------*/
+
+.contenedor .parrafo{
+    grid-column:1/-1;
+    grid-row:span 22;
+    background: #fff;
+}
+.contenedor .parrafo{
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:center;
+}
+.contenedor .scroll-one{
+    grid-column:1/-1;
+    grid-row:span 8;
+    background: #fff;
+}
+.contenedor .scroll-two{
+    grid-column:1/-1;
+    grid-row:span 32;
+    background: #fff;
+}
+.contenedor .scroll-responsive{
+    display: none;
+}
+.contenedor .scroll-responsive2{
+    display: none;
+}
+
+.contenedor .datos-b{
+    grid-column:1/-1;
+    grid-row:span 15;
+    background: #fff;
+    border-top: 1px solid #333333;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    
+}
+.contenedor .datos-b > h2{
+    font-size:18px;
+}
+.contenedor .scroll-one{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.contenedor .scroll-one > ul{
+    display: flex;
+    justify-content:center;
+    
+}
+.contenedor .scroll-one > ul > li{
+    color: #cccccc;
+    list-style: none;
+    margin: 10px;
+    margin-right: 54px;
+}
+input[type='range']{
+    width: 55%;
+    -webkit-appearance: none;
+    background-color: #999999;
+    height: 2px;
+    outline: none;
+}
+input[type='range']::-webkit-slider-thumb{
+    background-color: #000;
+}
+
+.scroll-two{
+    display:flex;
+    flex-direction:column;
+    grid-gap:100px;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 600px;
+}
+.scroll-two > section{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    
+}
+
+
+/*Comienza scroll----------------------------------------*/
+
+.scroll-two #carmen1 {
+    background-image: url(imgs/1924-carmen-soler.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.scroll-two #carmen2 {
+    background-image: url(imgs/madre-carmen-soler.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.scroll-two #carmen3 {
+    background-image: url(imgs/padre-carmen-soler.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.scroll-two #carmen4 {
+    background-image: url(imgs/1936-compas-carmen-soler.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.scroll-two #carmen5 {
+    background-image: url(imgs/1943-carmen-soler.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.scroll-two #carmen6 {
+    background-image: url(imgs/1947-carmen-soler.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.scroll-two #carmen7 {
+    background-image: url(imgs/1963-carmen-soler-china.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.scroll-two #carmen8 {
+    background-image: url(imgs/1965-carmen-soler-madre-hija.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.scroll-two #carmen9 {
+    background-image: url(imgs/1965-tortura-matena-soler-denuncia.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.scroll-two #carmen10 {
+    background-image: url(imgs/1951-comodoro-rivadavia-carmen-soler.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.scroll-two #carmen11 {
+    background-image: url(imgs/1953-periodico-poema-carmen-soler.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.scroll-two #carmen12 {
+    background-image: url(imgs/1954-la-ninha-muerta-carmen-soler.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.scroll-two #carmen13 {
+    background-image: url(imgs/1955-archivo-terror-carmen-soler.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+
+
+.back{
+    color: #333333;
+}
+.contenedor .op{
+    display: none;
+}
+.contenedor .op2{
+    display: none;
+}
+
+/*Footer-----------------------------*/
+.contenedor .footer{
+    grid-column: 1/-1;
+    grid-row: span 6;
+    display: grid;
+    align-items:center;
+    justify-content:space-between;
+    background: #A61317;
+    grid-gap:20px;
+    flex-direction:column;
+}
+
+.cajita{
+    grid-column: 1/4;
+}
+
+.peque {
+    grid-column: 16/19;
+}
+
+.peque img {
+    height: 30px;
+    width: 30px;
+}
+
+.footer .peque a {
+    color: #fff;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1230px){
+    .contenedor .scroll-one{
+        display: none;
+    }
+    .contenedor .scroll-two{
+        display: none;
+    }
+    .contenedor .op{
+        grid-column:1/-1;
+        height: 650px;
+        
+        display: flex;
+        flex-direction:column;
+        grid-gap:80px;
+        
+        overflow-y: scroll;
+
+    }
+    .contenedor .op .valor1{
+        display: flex;
+        flex-direction:row;
+        justify-content:space-around;
+       
+    }
+    .contenedor .op .valor1 .texto1{
+         width: 50%;
+    }
+    .contenedor .op .valor1 .pic{
+        background: #cccccc;
+        width: 40%;
+        height: 320px;
+    }
+    .contenedor .op .valor2{
+        display: flex;
+        flex-direction:row;
+        justify-content:space-around;
+       
+    }
+    .contenedor .op .valor2 .texto2{
+         width: 50%;
+    }
+    .contenedor .op .valor2 .pic{
+        background: #cccccc;
+        width: 40%;
+        height: 320px;
+    }
+    .contenedor .op .valor3{
+        display: flex;
+        flex-direction:row;
+        justify-content:space-around;
+       
+    }
+    .contenedor .op .valor3 .texto3{
+         width: 50%;
+    }
+    .contenedor .op .valor3 .pic{
+        background: #cccccc;
+        width: 40%;
+        height: 320px;
+    }
+    .contenedor .op .valor6{
+        display: flex;
+        flex-direction:row;
+        justify-content:space-around;
+       
+    }
+    .contenedor .op .valor6 .texto6{
+         width: 50%;
+    }
+    .contenedor .op .valor6 .pic{
+        background: #cccccc;
+        width: 40%;
+        height: 320px;
+    }
+    .contenedor .op .valor7{
+        display: flex;
+        flex-direction:row;
+        justify-content:space-around;
+       
+    }
+    .contenedor .op .valor7 .texto7{
+         width: 50%;
+    }
+    .contenedor .op .valor7 .pic{
+        background: #cccccc;
+        width: 40%;
+        height: 320px;
+    }
+    .contenedor .op .valor9{
+        display: flex;
+        flex-direction:row;
+        justify-content:space-around;
+       
+    }
+    .contenedor .op .valor9 .texto9{
+         width: 50%;
+    }
+    .contenedor .op .valor9 .pic{
+        background: #cccccc;
+        width: 40%;
+        height: 320px;
+    }
+    .contenedor .op .valor12{
+        display: flex;
+        flex-direction:row;
+        justify-content:space-around;
+       
+    }
+    .contenedor .op .valor12 .texto12{
+         width: 50%;
+    }
+    .contenedor .op .valor12 .pic{
+        background: #cccccc;
+        width: 40%;
+        height: 320px;
+    }
+}
+
+@media screen and (max-width:799px){
+    .contenedor .op .valor1 .texto1 > p2,
+    .contenedor .op .valor2 .texto2 > p2,
+    .contenedor .op .valor3 .texto3 > p2,
+    .contenedor .op .valor6 .texto6 > p2,
+    .contenedor .op .valor7 .texto7 > p2,
+    .contenedor .op .valor9 .texto9 > p2,
+    .contenedor .op .valor12 .texto12 > p2{
+        font-size: 13px;
+    }
+    .contenedor .op > div > p1{
+        font-size: 13px;
+    }
+    .contenedor .op > div > p2{
+        font-size: 13px;
+    }
+    .contenedor .op > div > p3{
+        font-size: 13px;
+    }
+    .contenedor .op > div > h2{
+        font-size: 20px;
+    }
+    .contenedor .op .valor1 .texto1 > h2,
+    .contenedor .op .valor2 .texto2 > h2,
+    .contenedor .op .valor3 .texto3 > h2,
+    .contenedor .op .valor6 .texto6 > h2,
+    .contenedor .op .valor7 .texto7 > h2,
+    .contenedor .op .valor9 .texto9 > h2,
+    .contenedor .op .valor12 .texto12 > h2{
+        font-size: 20px;
+}
+}
+
+@media screen and (max-width:1250px){
+    .contenedor .cabecera{
+        grid-column:1/8;
+    }
+    .contenedor .menu{
+        grid-column:8/-1;
+    }
+}
+@media screen and (max-width:980px){
+    .contenedor .cabecera{
+        grid-column:1/6;
+    }
+    .contenedor .menu{
+        grid-column:6/-1;
+    }
+}
+
+@media screen and (max-width:900px){
+    .contenedor .menu2{
+        display: flex;
+        position: absolute;
+        flex-direction:column;
+        align-items:flex-start;
+        background: #fff;
+        /*border: 1px solid black;*/
+        grid-gap:7px;
+        
+        width: 280px;
+        
+        right: -300px;
+        /*right: 12px;*/
+        top:110px;
+        
+    }
+    .contenedor .menu2 > a{
+        margin: 1px;
+        padding: 5px;
+        margin-left: 5px;
+        
+    }
+    .contenedor .menu2 > a:hover{
+        cursor:pointer;
+        background: rgba(0,0,0,0.1);
+        width: 100%;
+        height: 100%;
+        
+    }
+ 
+    .contenedor .menures{
+        display: grid;
+        background: #fff;
+        grid-column:15/21;
+        grid-row:span 6;
+       
+        display: flex;
+        justify-content:right;
+    }
+    .contenedor .menures > label:hover{
+        cursor:pointer;
+        background: rgba(0,0,0,0.1);
+        height: 40px;
+        padding: 4px;
+    }
+    .contenedor .menures > input{
+        display: none;
+    }
+    .contenedor .menu{
+        display:none;
+    }
+    .contenedor .menu2{
+    
+    margin-top: -20px;
+    
+}
+.contenedor .menu2 a{
+    text-decoration: none;
+    font-family: Calibri;
+    color: #000000;
+    font-size: 19px;
+}
+    #menu-res:checked ~ .menu2{
+        right: 12px;
+    }
+}
